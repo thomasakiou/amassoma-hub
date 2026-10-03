@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#1c1c18", "surface": "#fcf9f2", "on-tertiary-fixed": "#0d1c2f", "on-tertiary": "#ffffff", "error": "#ba1a1a", "inverse-surface": "#31312c", "inverse-primary": "#bec6e0", "outline": "#76777d", "surface-container-highest": "#e5e2db", "primary-fixed-dim": "#bec6e0", "on-surface": "#1c1c18", "on-error": "#ffffff", "error-container": "#ffdad6", "surface-container-low": "#f6f3ec", "tertiary-container": "#0d1c2f", "on-primary-fixed": "#131b2e", "surface-variant": "#e5e2db", "secondary-fixed": "#ffdbca", "primary-fixed": "#dae2fd", "on-secondary-fixed": "#331200", "surface-container": "#f0eee7", "on-secondary-fixed-variant": "#763300", "tertiary": "#000000", "inverse-on-surface": "#f3f0e9", "on-primary-container": "#7c839b", "on-secondary-container": "#682c00", "tertiary-fixed": "#d5e3fd", "surface-container-high": "#ebe8e1", "on-error-container": "#93000a", "outline-variant": "#c6c6cd", "on-secondary": "#ffffff", "background": "#fcf9f2", "tertiary-fixed-dim": "#b9c7e0", "secondary-fixed-dim": "#ffb68e", "on-surface-variant": "#45464d", "surface-container-lowest": "#ffffff", "surface-bright": "#fcf9f2", "on-primary": "#ffffff", "primary-container": "#131b2e", "primary": "#000000", "surface-tint": "#565e74", "secondary": "#9b4500", "on-tertiary-container": "#76859b", "surface-dim": "#dcdad3", "on-primary-fixed-variant": "#3f465c", "secondary-container": "#fd8a42", "on-tertiary-fixed-variant": "#3a485c" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-tablet": "1.5rem", "space-sm": "0.5rem", "margin": "1rem", "space-xl": "2rem", "space-md": "1rem", "margin-desktop": "3rem", "gutter-desktop": "2rem", "gutter": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-tablet": "2rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "headline-xl": ["Merriweather"], "headline-lg-mobile": ["Merriweather"], "headline-xl-mobile": ["Merriweather"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Merriweather"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Merriweather"], "label-lg": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "700"}], "headline-lg-mobile": ["22px", {"lineHeight": "30px", "fontWeight": "700"}], "headline-xl-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}], "label-sm": ["10px", {"lineHeight": "14px", "fontWeight": "600"}], "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}], "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}], "title-lg": ["18px", {"lineHeight": "24px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "26px", "fontWeight": "400"}], "title-md": ["16px", {"lineHeight": "22px", "fontWeight": "600"}] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fcf9f2;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Amassoma Lexicon Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UQCZBvHIYtGZEjbGSu72MN44msj4m6U2a1vuD8eGhFwFbg9GgbYR7cAJgkAiLc5EAToXq77H47nyhqHvoiRRibGNhhrrzgCadvI8ZuVeNb1ZOOwbZWxMVHCz42IhPq9zj7odsa405SdAPF5Hs8CZmRImnIhxcb8YnaNfDRSIg5Ite9aBugmTlBcJvCDIoKNghDStPj4I6jnh8MnjV59hg76oyqbsFD-3FNqByre27OZ1WpeFO3nZb0x4s"/><div class="flex flex-col min-w-0 leading-tight"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight text-on-surface truncate">Amassoma Lexicon</span></div><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Izon • Bayelsa</span><span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Home Search</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="flex items-center gap-1 bg-surface-container px-space-xs py-0.5 rounded-full text-secondary"><span class="material-symbols-outlined text-[14px]">offline_pin</span><span class="font-label-sm text-label-sm uppercase tracking-tight text-secondary font-semibold">Offline</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Search & Diacritic Assistant Section -->
+<section class="px-gutter pt-space-md pb-space-sm flex flex-col gap-space-sm">
+<!-- Direction Switcher -->
+<div class="flex items-center justify-between">
+<div class="inline-flex p-1 bg-surface-container rounded-full shadow-sm" id="search-dir-toggle">
+<button class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-all" data-direction="izon-eng" type="button">
+          Amassoma → English
+        </button>
+<button class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-direction="eng-izon" type="button">
+          English → Amassoma
+        </button>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase">Central Izon</span>
+</div>
+</div>
+<!-- Main Search Card -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-xs shadow-sm focus-within:shadow-md transition-shadow">
+<div class="flex items-center gap-space-xs px-space-xs py-1">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0">search</span>
+<input autocomplete="off" class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none py-1" id="lexicon-search-input" placeholder="Search Amassoma or English words (e.g., Kẹkẹ, Bọlọu)..." spellcheck="false" type="text"/>
+<button class="hidden text-outline hover:text-on-surface p-1 transition-colors" id="clear-search-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-secondary-fixed flex items-center justify-center text-on-surface transition-colors flex-shrink-0" title="Voice Search / Audio Match" type="button">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+</div>
+<!-- Diacritic Quick-Input Dock (Crucial for Amassoma Orthography) -->
+<div class="pt-2 pb-1 px-1 bg-surface-container-low rounded-lg mt-1 flex flex-col gap-1.5">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-outline font-semibold">Special Orthography &amp; Tones</span>
+<span class="font-label-sm text-[10px] text-secondary font-medium">Tap to insert</span>
+</div>
+<div class="flex items-center gap-1.5 overflow-x-auto pb-0.5 no-scrollbar" id="diacritic-rack">
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="ẹ" type="button">ẹ</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="ọ" type="button">ọ</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="ị" type="button">ị</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="ụ" type="button">ụ</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="ñ" type="button">ñ</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="gh" type="button">gh</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="kp" type="button">kp</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="gb" type="button">gb</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-secondary font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="́" title="High Tone Accent" type="button">´</button>
+<button class="min-w-[34px] h-[34px] px-2 flex items-center justify-center bg-surface-container-lowest hover:bg-secondary-fixed text-secondary font-headline-md text-headline-md rounded-lg shadow-sm transition-transform active:scale-95" data-char="̀" title="Low Tone Accent" type="button">`</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Word of the Day (Featured Scholarly Entry) -->
+<section class="px-gutter pt-space-xs pb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-sm">
+<!-- Decorative archival stamp backdrop effect -->
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-secondary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Banner Header -->
+<div class="flex items-center justify-between border-b-0 pb-1">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold tracking-wider">
+            WORD OF THE DAY • EKIAN TARIBA
+          </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>Today</span>
+</div>
+</div>
+<!-- Lexical Headword & Tone -->
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline justify-between">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile tracking-tight text-on-surface">
+            Kẹkẹ́bọ̀lọ̀u
+          </h2>
+<button class="text-on-surface-variant hover:text-secondary transition-colors p-1" id="wotd-bookmark" title="Save headword" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<!-- Phonetics & Audio Pill -->
+<div class="flex items-center flex-wrap gap-2 pt-0.5">
+<span class="font-body-md text-body-md text-outline tracking-wide font-mono">
+            /kɛ̀kɛ́.bɔ̀lɔ̀ʊ̀/
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<!-- Audio Button with Live Waveform Animation Toggle -->
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container hover:bg-secondary-fixed text-on-surface transition-colors" id="audio-play-wotd" type="button">
+<span class="material-symbols-outlined text-secondary text-[16px]" id="wotd-audio-icon">volume_up</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">0:03</span>
+<div class="flex items-center gap-0.5 h-3 px-0.5">
+<span class="w-0.5 h-2 bg-secondary rounded-full animate-pulse"></span>
+<span class="w-0.5 h-3 bg-secondary rounded-full animate-pulse" style="animation-delay: 150ms;"></span>
+<span class="w-0.5 h-1.5 bg-secondary rounded-full animate-pulse" style="animation-delay: 300ms;"></span>
+</div>
+</button>
+</div>
+</div>
+<!-- Part of speech & dialect taxonomy -->
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed rounded font-label-sm text-label-sm font-semibold tracking-wider uppercase">
+          Noun
+        </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">
+          Central Izon • Ogboin Clan Dialect
+        </span>
+</div>
+<!-- Definition sense with scholarly numbering -->
+<div class="flex gap-2 text-on-surface pt-1">
+<span class="font-title-md text-title-md text-secondary font-bold flex-shrink-0">1.</span>
+<p class="font-body-lg text-body-lg leading-snug">
+          A riverbank settlement; the traditional landing shore for community canoes and fishermen at dawn.
+        </p>
+</div>
+<!-- Contextual Usage Quote (Italicized Merriweather) -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1 border-l-2 border-secondary">
+<p class="font-headline-md text-body-md italic text-on-surface">
+          “Wó kẹkẹ́bọ̀lọ̀u yé dou.”
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          English: <span class="text-on-surface font-medium">We are heading to the ancestral riverside landing.</span>
+</p>
+</div>
+<!-- Cultural Context Note & Entry Action -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">water</span>
+          Wilberforce Island Topography
+        </span>
+<a class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md font-bold hover:underline" href="#">
+<span>Explore full entry</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Editorial Visual Vignette: Amassoma Waterways -->
+<section class="px-gutter pb-space-md">
+<div class="relative w-full rounded-xl overflow-hidden shadow-sm bg-surface-container-highest">
+<img class="w-full h-36 object-cover" data-alt="Scholarly photographic documentary of traditional wooden dugout canoes resting on the calm mist-covered waters of the Nun River in Amassoma, Bayelsa State, Nigeria. Warm dawn sunlight filtering through lush mangrove trees and oil palms, glowing golden and ochre hues reflecting off the gentle ripples, timeless Niger Delta archival photography aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ74WdJpVTTZFwz0w5Vx7nV_a1PejFh5j6fOi2n5_bbuccPFcHR-YuQcQ6-WtxEC5D-BcItiXg4-BR4X3vKYhYlSPVQk1Fu2T5q92FNAg00_1zP3yNSxN6oYafwbnx0EYfQIKl5zAEViNPtwpuZCX96wByoieZ7TlCOoInl_ZibkYoiyAyP6wC5vSLxI2x0jMUf8Dp96_hhwBXXWtGQ7XkCYgrbsMobWwAf04gs3InXs4jAXgqQu1C"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/40 to-transparent flex flex-col justify-end p-space-sm text-on-primary">
+<div class="flex items-center gap-1.5 text-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Living Field Recordings</span>
+</div>
+<h3 class="font-headline-md text-headline-md leading-tight text-surface">The Riverine Heritage of Amassoma</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high line-clamp-1">Ogboin dialect documented across 42 coastal fishing settlements.</p>
+</div>
+</div>
+</section>
+<!-- Recent Searches & Inquiries -->
+<section class="px-gutter pb-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">history</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Recent Searches</h3>
+</div>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" id="clear-recents-btn" type="button">
+        Clear history
+      </button>
+</div>
+<!-- Word list with pronunciation snippets -->
+<div class="flex flex-col gap-1.5" id="recents-list">
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-title-md text-on-surface font-bold">Ebí</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">/e.bí/</span>
+<span class="px-1.5 py-0.2 bg-surface-container text-on-surface-variant rounded text-[10px] font-semibold uppercase">adj.</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Good; beautiful; agreeable; prosperous state.</span>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Listen" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors bookmark-toggle" title="Save" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-title-md text-on-surface font-bold">Árù</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">/á.rù/</span>
+<span class="px-1.5 py-0.2 bg-surface-container text-on-surface-variant rounded text-[10px] font-semibold uppercase">n.</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Canoe, vessel, river craft for traveling.</span>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Listen" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors bookmark-toggle" title="Save" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-title-md text-on-surface font-bold">Wóyìngí</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">/wó.jìŋ.ɡí/</span>
+<span class="px-1.5 py-0.2 bg-surface-container text-on-surface-variant rounded text-[10px] font-semibold uppercase">proper n.</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">The Supreme Creator, Divine Mother of All Beings.</span>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Listen" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-secondary transition-colors bookmark-toggle" title="Saved" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-title-md text-on-surface font-bold">Bọ́u</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">/bɔ́.ù/</span>
+<span class="px-1.5 py-0.2 bg-surface-container text-on-surface-variant rounded text-[10px] font-semibold uppercase">n.</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">The rainforest; deep untamed bush; sacred grove.</span>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Listen" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors bookmark-toggle" title="Save" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Discovery & Curated Corpus Shortcuts -->
+<section class="px-gutter pb-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">explore</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Curated Lexicon Collections</h3>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">View all</a>
+</div>
+<!-- 2x2 Bento Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Collection 1: Riverway -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between gap-space-xs hover:shadow transition-shadow cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">kayaking</span>
+</div>
+<span class="font-label-sm text-[10px] font-bold text-secondary bg-secondary-fixed/50 px-1.5 py-0.5 rounded">340 words</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Waterways &amp; Canoes</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2 mt-0.5">Tides, fishing terms, river navigation dialect.</p>
+</div>
+</div>
+<!-- Collection 2: Kinship -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between gap-space-xs hover:shadow transition-shadow cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">diversity_1</span>
+</div>
+<span class="font-label-sm text-[10px] font-bold text-secondary bg-secondary-fixed/50 px-1.5 py-0.5 rounded">180 words</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Kinship &amp; Lineage</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2 mt-0.5">Elders, matrilineal roots, family honorifics.</p>
+</div>
+</div>
+<!-- Collection 3: Proverbs -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between gap-space-xs hover:shadow transition-shadow cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</div>
+<span class="font-label-sm text-[10px] font-bold text-secondary bg-secondary-fixed/50 px-1.5 py-0.5 rounded">95 idioms</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Delta Proverbs</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2 mt-0.5">Ancient allegories, oral wisdom, metaphors.</p>
+</div>
+</div>
+<!-- Collection 4: Tonal Guide -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between gap-space-xs hover:shadow transition-shadow cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</div>
+<span class="font-label-sm text-[10px] font-bold text-secondary bg-secondary-fixed/50 px-1.5 py-0.5 rounded">Audio Guide</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Tone Inflections</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2 mt-0.5">High, low, and gliding tonal distinctions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Secondary Image Card: Scholarly Documentation -->
+<section class="px-gutter pb-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-sm shadow-sm flex items-center gap-space-sm">
+<img class="w-20 h-20 rounded-lg object-cover flex-shrink-0" data-alt="Close up photograph of an aged, open linguistic notebook with hand-inked Amassoma phonetic transcriptions, resting on an oak desk next to an antique recording microphone and Niger Delta river maps, warm sepia and parchment tones, Oxford academic study ambience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv9MHZQWnpkEndfzZlaM_kG9k-mgYBsf060AVVvcFBAEdodnT85svrke8VFYsn7uMLaAGRD0UrXt-eQD_-CSnrXY1iOyHiYyniyxQY4K91ZFOXZUdK7TaiynYGLZNt11-FcQbiFu-AsVGtBYutGcK4b3XzD_EUdp0cTUJvAO690USd76JnsFEiKzLKLp8sT2pO2RY7DeAcSY0btk_Zm-7Igp6Ci7Lk4mzt8VFyyDNxmL80hYukJTbG"/>
+<div class="flex flex-col justify-center min-w-0">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-secondary tracking-wider">Linguistic Preservation</span>
+<h4 class="font-headline-md text-body-lg text-on-surface font-bold leading-snug">The Ogboin Dialect Archive</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Compiled with native speakers at Niger Delta University, Amassoma.</p>
+</div>
+</div>
+</section>
+<!-- Offline Database Status Badge & Academic Footnote -->
+<section class="px-gutter pb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Offline Lexicon Active</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">v2.4 (2025 Ed.)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        14,250 entries, audio pronunciations, and syntactic variations are stored locally on your device for uninterrupted field use along the riverways.
+      </p>
+</div>
+</section>
+</div>
+<script>
+  // Diacritic Key Insertion Logic
+  const searchInput = document.getElementById('lexicon-search-input');
+  const clearBtn = document.getElementById('clear-search-btn');
+  const diacriticRack = document.getElementById('diacritic-rack');
+
+  if (diacriticRack && searchInput) {
+    diacriticRack.addEventListener('click', (e) => {
+      const button = e.target.closest('button');
+      if (!button) return;
+      const char = button.getAttribute('data-char');
+      if (!char) return;
+
+      const start = searchInput.selectionStart || searchInput.value.length;
+      const end = searchInput.selectionEnd || searchInput.value.length;
+      const text = searchInput.value;
+
+      searchInput.value = text.substring(0, start) + char + text.substring(end);
+      const newPos = start + char.length;
+      searchInput.focus();
+      searchInput.setSelectionRange(newPos, newPos);
+      toggleClearButton();
+    });
+  }
+
+  function toggleClearButton() {
+    if (searchInput.value.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+  }
+
+  if (searchInput && clearBtn) {
+    searchInput.addEventListener('input', toggleClearButton);
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      toggleClearButton();
+      searchInput.focus();
+    });
+  }
+
+  // Direction Switcher
+  const dirToggle = document.getElementById('search-dir-toggle');
+  if (dirToggle) {
+    const buttons = dirToggle.querySelectorAll('button');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        buttons.forEach((b) => {
+          b.className = 'px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface transition-all';
+        });
+        btn.className = 'px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-all';
+        
+        const isEng = btn.getAttribute('data-direction') === 'eng-izon';
+        searchInput.placeholder = isEng 
+          ? 'Search English words (e.g., River, Boat, Elder)...'
+          : 'Search Amassoma or English words (e.g., Kẹkẹ, Bọlọu)...';
+      });
+    });
+  }
+
+  // Bookmark Micro-interactions
+  document.querySelectorAll('.bookmark-toggle, #wotd-bookmark').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (!icon) return;
+      const isBookmarked = icon.textContent.trim() === 'bookmark';
+      if (isBookmarked) {
+        icon.textContent = 'bookmark_border';
+        icon.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove('text-secondary');
+        btn.classList.add('text-on-surface-variant');
+      } else {
+        icon.textContent = 'bookmark';
+        icon.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.add('text-secondary');
+        btn.classList.remove('text-on-surface-variant');
+      }
+    });
+  });
+
+  // Audio Waveform Simulation for Word of the Day
+  const audioBtn = document.getElementById('audio-play-wotd');
+  if (audioBtn) {
+    audioBtn.addEventListener('click', () => {
+      const icon = document.getElementById('wotd-audio-icon');
+      if (icon) {
+        icon.textContent = 'graphic_eq';
+        setTimeout(() => {
+          icon.textContent = 'volume_up';
+        }, 1800);
+      }
+    });
+  }
+
+  // Clear Recents Handler
+  const clearRecents = document.getElementById('clear-recents-btn');
+  const recentsList = document.getElementById('recents-list');
+  if (clearRecents && recentsList) {
+    clearRecents.addEventListener('click', () => {
+      recentsList.innerHTML = `
+        <div class="p-4 text-center bg-surface-container-lowest rounded-lg">
+          <p class="font-body-sm text-body-sm text-on-surface-variant italic">Search history cleared. Your inquiries will appear here.</p>
+        </div>
+      `;
+      clearRecents.style.display = 'none';
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-16 px-gutter max-w-lg mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] transition-colors text-secondary font-semibold" data-path="home-search" href="#"><span class="material-symbols-outlined text-[22px]">search</span><span class="font-label-sm text-label-sm">Search</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="word-detail" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm">Word View</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="browse-topics" href="#"><span class="material-symbols-outlined text-[22px]">sort_by_alpha</span><span class="font-label-sm text-label-sm">Browse</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="saved-vocabulary" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="font-label-sm text-label-sm">Saved</span></a></div></nav></body></html>
